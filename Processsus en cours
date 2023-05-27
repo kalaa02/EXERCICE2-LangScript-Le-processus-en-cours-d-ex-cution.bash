@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Afficher la liste des processus en cours d'exécution avec leur utilisation CPU
+ps aux | awk '{if($3>5.0) print}'
+
+# La commande "ps aux" affiche les informations sur tous les processus en cours d'exécution.
+# La sortie est ensuite filtrée avec la commande "awk" pour ne conserver que les processus dont l'utilisation CPU est supérieure à 5%.
+# Enfin, les résultats sont affichés à l'écran.
